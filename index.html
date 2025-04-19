@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Management System - Pricing Breakdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="page-title">Alumni Management System</h1>
+            <p class="page-subtitle">Comprehensive Pricing & Module Breakdown</p>
+            <div class="budget-badge">Total Budget: 200,000 BDT</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Budget Breakdown</h2>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="budgetChart" class="chart-container"> </canvas>
+                        <div class="chart-legend">
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #4361ee;"></div>
+                                <span>Data Management</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #3a0ca3;"></div>
+                                <span>Communication</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #4895ef;"></div>
+                                <span>Event Management</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #4cc9f0;"></div>
+                                <span>Fundraising</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #f72585;"></div>
+                                <span>User Portal</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #7209b7;"></div>
+                                <span>Reporting</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #b5179e;"></div>
+                                <span>Technical</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #560bad;"></div>
+                                <span>Networking</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color" style="background-color: #480ca8;"></div>
+                                <span>UI/UX Design</span>
+                            </div>
+                        </div>
+                        <table class="summary-table" style="margin-top: 2rem;">
+                            <thead>
+                                <tr>
+                                    <th>Module</th>
+                                    <th>Cost (BDT)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1. Data Management</td>
+                                    <td>25,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2. Communication & Engagement</td>
+                                    <td>25,000</td>
+                                </tr>
+                                <tr>
+                                    <td>3. Event Management</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>4. Fundraising & Donations</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>5. User Portal</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>6. Reporting & Analytics</td>
+                                    <td>15,000</td>
+                                </tr>
+                                <tr>
+                                    <td>7. Technical Features</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>8. Networking Platform</td>
+                                    <td>35,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Subtotal</td>
+                                    <td>180,000</td>
+                                </tr>
+                                <tr>
+                                    <td>9. UI/UX Design</td>
+                                    <td>20,000</td>
+                                </tr>
+                                <tr>
+                                    <td>Grand Total</td>
+                                    <td>200,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <div id="module-deatils-wrapper" data-include="./templates/module-details.html"></div> -->
+                <div class="card" id="module-details">
+                    <div class="card-header">
+                        <h2 class="card-title">Module Details</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion-container">
+                            <!-- Data Management -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="7 10 12 15 17 10"></polyline>
+                                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                                        </svg>
+                                        1. Data Management
+                                    </div>
+                                    <div class="accordion-price">25,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Alumni Profile CRUD</td>
+                                                <td>8,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bulk Import/Export</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Advanced Search & Filters</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data Validation & Integrity</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Audit Logs</td>
+                                                <td>3,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Communication & Engagement -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                            </path>
+                                        </svg>
+                                        2. Communication & Engagement
+                                    </div>
+                                    <div class="accordion-price">25,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Email Campaigns</td>
+                                                <td>10,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>SMS Alerts</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>In-App Notifications</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Anniversary & Birthday Reminders</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Event Management -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        3. Event Management
+                                    </div>
+                                    <div class="accordion-price">20,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Event Creation Wizard</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>RSVP & Ticketing</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Attendance Tracking</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Calendar Integration</td>
+                                                <td>3,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Automated Reminders</td>
+                                                <td>2,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Fundraising & Donations -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                                        </svg>
+                                        4. Fundraising & Donations
+                                    </div>
+                                    <div class="accordion-price">20,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Campaign Builder</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Payment Gateway Integration</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Donor Management</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Receipts & Tax Invoices</td>
+                                                <td>2,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Campaign Analytics</td>
+                                                <td>2,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- User Portal -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        5. User Portal
+                                    </div>
+                                    <div class="accordion-price">20,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Authentication & Authz</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Alumni Dashboard</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Admin Panel</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Responsive Layout</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Reporting & Analytics -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 20V10M12 20V4M6 20v-6"></path>
+                                        </svg>
+                                        6. Reporting & Analytics
+                                    </div>
+                                    <div class="accordion-price">15,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Pre-built Reports</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Custom Date Filters</td>
+                                                <td>3,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Data Export</td>
+                                                <td>3,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Basic Charts</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Technical Features -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                        7. Technical Features
+                                    </div>
+                                    <div class="accordion-price">20,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>API-First Backend</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Security & Compliance</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Scalable Architecture</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Backups & Logging</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Networking Platform -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                        8. Networking Platform
+                                    </div>
+                                    <div class="accordion-price">35,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Alumni Directory</td>
+                                                <td>10,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Private Messaging</td>
+                                                <td>10,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Interest-Based Groups</td>
+                                                <td>10,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Admin Controls & Moderation</td>
+                                                <td>5,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- UI/UX Design -->
+                            <div class="accordion">
+                                <div class="accordion-header">
+                                    <div class="accordion-title">
+                                        <svg class="module-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                                        </svg>
+                                        9. UI/UX Design
+                                    </div>
+                                    <div class="accordion-price">20,000 BDT</div>
+                                    <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="accordion-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Design System & Branding</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>High-Fidelity Mockups</td>
+                                                <td>6,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Responsive UI Design</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>UX Testing & Feedback</td>
+                                                <td>4,000</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">UI Demos – System Screens</h2>
+            </div>
+            <div class="card-body">
+                <p style="margin-bottom: 1rem;">Explore the key user interface screens of the Alumni Management System.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+                    <a href="./asset/01.jpeg" data-lightbox="ui-gallery" data-title="Dashboard View">
+                        <img src="./asset/01.jpeg" alt="Dashboard Screenshot"
+                            style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    </a>
+                    <a href="./asset/02.jpeg" data-lightbox="ui-gallery" data-title="Dashboard View">
+                        <img src="./asset/02.jpeg" alt="Dashboard Screenshot"
+                            style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    </a>
+                    <a href="./asset/003.jpeg" data-lightbox="ui-gallery" data-title="Dashboard View">
+                        <img src="./asset/003.jpeg" alt="Dashboard Screenshot"
+                            style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    </a>
+
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem;">
+                    <a href="./asset/04.jpeg" data-lightbox="ui-gallery" data-title="Dashboard View">
+                        <img src="./asset/04.jpeg" alt="Dashboard Screenshot"
+                            style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    </a>
+                    <a href="./asset/05.jpeg" data-lightbox="ui-gallery" data-title="Dashboard View">
+                        <img src="./asset/05.jpeg" alt="Dashboard Screenshot"
+                            style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    </a>
+                    <a href="./asset/06.jpeg" data-lightbox="ui-gallery" data-title="Dashboard View">
+                        <img src="./asset/06.jpeg" alt="Dashboard Screenshot"
+                            style="width: 100%; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const accordion = header.parentElement;
+                accordion.classList.toggle('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const containers = document.querySelectorAll("[data-include]");
+
+            containers.forEach(async (el) => {
+                const file = el.getAttribute("data-include");
+                const res = await fetch(file);
+                const html = await res.text();
+                el.innerHTML = html;
+            });
+        });
+    </script>
+
+
+
+    <script>
+        const ctx = document.getElementById('budgetChart').getContext('2d');
+
+        const budgetChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    'Data Management',
+                    'Communication',
+                    'Event Management',
+                    'Fundraising',
+                    'User Portal',
+                    'Reporting',
+                    'Technical',
+                    'Networking',
+                    'UI/UX Design'
+                ],
+                datasets: [{
+                    data: [25000, 25000, 20000, 20000, 20000, 15000, 20000, 35000, 20000],
+                    backgroundColor: [
+                        '#4361ee',
+                        '#3a0ca3',
+                        '#4895ef',
+                        '#4cc9f0',
+                        '#f72585',
+                        '#7209b7',
+                        '#b5179e',
+                        '#560bad',
+                        '#480ca8'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false // Use your custom legend
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                const value = context.raw;
+                                return `${context.label}: BDT ${value.toLocaleString()}`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
